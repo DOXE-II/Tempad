@@ -15,5 +15,18 @@ boutons.forEach(function(bouton){
     })
 })
 
+const bootBouton = document.getElementById("boot-btn");
 
+bootBouton.addEventListener("click", function(){
+    
+    document.documentElement.requestFullscreen().then(function(){
+        screen.orientation.lock("landscape");
 
+        const ecranBoot = document.getElementById("boot");
+        const ecranSignIn = document.getElementById("signin");
+
+        ecranBoot.classList.remove("active");
+        ecranSignIn.classList.add("active");
+
+    });
+});
