@@ -1,3 +1,9 @@
+:root {
+    --fond: #120a05;
+    --ambre: #ff9a1f;
+}
+
+
 .screen {
     display: none;
 }
@@ -6,7 +12,8 @@
     display: block;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--fond);
+    color: var(--ambre);
     
 }
 
@@ -16,5 +23,6 @@ h1 {
 
 body {
     margin: 0;
+    font-family: VT323, monospace;
 }
 
