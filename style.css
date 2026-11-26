@@ -9,7 +9,12 @@
 }
 
 .screen.active {
-    display: block;
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 100vw;
     height: 100vh;
     background-color: var(--fond);
@@ -30,9 +35,58 @@
     box-shadow: 0 0 6px var(--ambre);
 }
 
+.miss-minutes {
+    width: 48vh;
+    height: 39vh;
+    border: 1px dashed var(--ambre);
+}
+
+.fleche {
+    background: var(--ambre);
+    color: var(--fond);
+    padding: 1vh 5vh;
+    text-shadow: none;
+
+
+}
+
 h1 {
     margin: 0;
 }
+
+p {
+    margin: 0;
+}
+
+#signin h1 {
+    background: var(--ambre);
+    color: var(--fond);
+    padding: 1vh 3vh;
+    border-radius: 10px;
+    text-shadow: none;
+    box-shadow: 0 0 6px var(--ambre);
+    font-size: 16vh;
+    width: 61vh;
+    text-align: center;
+}
+
+#signin button {
+    width: 62vh;
+    height: 12vh;
+    font-size: 4.5vh;
+    border: 3px solid var(--ambre); 
+    box-shadow: 0 0 6px var(--ambre);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+
+}
+
+#signin p {
+    font-size: 2.5vh;
+}
+
 
 button {
     font-family: VT323, monospace;
